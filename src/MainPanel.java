@@ -8,8 +8,8 @@ import java.util.Objects;
 public class MainPanel extends JPanel {
 
     private User user;
-    private Font font1;
-    private Font font2;
+    private final Font font1;
+    private final Font font2;
     private JLabel heightLabelNumber;
     private TextField firstNameData;
     private TextField lastNameData;
@@ -168,7 +168,7 @@ public class MainPanel extends JPanel {
 
             @Override
             public void mouseMoved(MouseEvent e) {
-                heightLabelNumber.setText("" + heightSlider.getValue());
+                heightLabelNumber.setText(String.valueOf(heightSlider.getValue()));
             }
         });
         this.personal_H_W_Bf.add(heightSlider);
