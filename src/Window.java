@@ -20,8 +20,6 @@ public class Window extends JFrame {
     }
 
 
-
-
     public void showWindow(){
         this.setVisible(true);
     }

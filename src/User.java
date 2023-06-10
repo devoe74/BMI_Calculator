@@ -9,31 +9,11 @@ public class User {
     private double BMIScore;
     private double idealWeight;
     private String weightStatus;
-    Calculator calculator = new Calculator();
+    Calculator calculator;
+
     public User(){
-
+        this.calculator = new Calculator();
     }
-
-//
-//    public double getActualWeight() {
-//        return actualWeight;
-//    }
-//
-//    public double getAge() {
-//        return age;
-//    }
-//
-//    public double getBodyFrame() {
-//        return bodyFrame;
-//    }
-//
-//    public String getGender() {
-//        return gender;
-//    }
-//
-//    public int getHeight() {
-//        return height;
-//    }
 
 
     public double getBMIScore() {
@@ -51,10 +31,6 @@ public class User {
     public String getWeightStatus() {
         this.weightStatus = calculator.calculateWeightStatus(BMIScore);
         return weightStatus;
-    }
-
-    public double getHeight() {
-        return height;
     }
 
     public void setActualWeight(double actualWeight) {
@@ -89,13 +65,4 @@ public class User {
         this.firstName = firstName;
 
     }
-
 }
-//    double actualWeight , String firstName , String lastName , int bodyFrame , double age , int height , int gender
-//    this.actualWeight = actualWeight;
-//        this.firstName = firstName;
-//        this.bodyFrame = bodyFrame;
-//        this.lastName = lastName;
-//        this.height = height;
-//        this.age = age;
-//        this.gender = gender;

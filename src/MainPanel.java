@@ -10,9 +10,6 @@ public class MainPanel extends JPanel {
     private User user;
     private Font font1;
     private Font font2;
-    private String BMIData;
-    private String idealWeightData;
-    private String weightStatusData;
     private JLabel heightLabelNumber;
     private TextField firstNameData;
     private TextField lastNameData;
@@ -26,7 +23,6 @@ public class MainPanel extends JPanel {
     private JPanel personalData;
     private JPanel personal_H_W_Bf;
     private JPanel results;
-    JDialog errorsDialog;
 
     public MainPanel(){
         this.setLayout(null);
@@ -48,12 +44,6 @@ public class MainPanel extends JPanel {
         this.results = new JPanel();
         this.add(getResults());
     }
-
-
-
-
-
-
 
 
     public JPanel getPersonalData(){
@@ -280,9 +270,6 @@ public class MainPanel extends JPanel {
         }));
 
 
-
-
-
         this.results.add(calculate);
         this.results.add(BMILabel);
         this.results.add(BMIDataLabel);
@@ -292,12 +279,7 @@ public class MainPanel extends JPanel {
         this.results.add(idealWeightDataLabel);
 
 
-
-
-
-
         return this.results;
     }
-
 
 }
